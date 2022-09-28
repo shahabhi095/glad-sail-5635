@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    <!-- <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serih5;
+        }
+        #navbar{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            position: fixed;
+            width: 100%;
+        }
+        .navtop{
+            display: flex;
+            background-color:#f2f3f8 ;
+            justify-content: right;
+           
+           
+        }
+        .navtop>div{
+            width: 12%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navtop>div>img{
+            height: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .navtop>div:last-child{
+            margin-right: 5%;
+        }
+         .navtop>div>h4{
+            margin: 10px;
+         }
+         .middle{
+            border: 0px solid blue;
+           padding: 5px;
+         }
+         .middle>div{
+            display: flex;
+            justify-content: space-around;
+    
+         }
+         .middle>div>div{
+            width: 25%;
+            border: 0px solid darkblue;
+             display: flex;
+             justify-content: space-between;
+            align-items: center;
+            padding: -15px;
+         }
+         .middle>div>div:first-child{
+            width: 45%;
+             height: auto;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+           
+         }
+         .middle>div>div:first-child>img{
+            width: 80px;
+            height: 100%;
+            margin: auto 20px;
+            padding: 0px;
+         }
+         .middle>div>div:last-child>img{
+            width: 20px;
+            height: auto;
+            margin: auto 10px;
+         }
+         .login{
+            background-color: white;
+            border: 1px solid #8652ff;
+            padding: 4px;
+            font-size: 16px;
+             width: 80px;
+             border-radius: 5px;
+            
+         }
+         .login>a{
+            text-decoration: none;
+             color: #8652ff;
+         }
+         .register{
+            background-color: #8652ff;
+            width: 100px;
+            font-size: 16px;
+            color: white;
+            border: 0;
+            padding: 5px;
+            border-radius: 5px;
+         }
+         .register>a{
+            color:white;
+            text-decoration: none;
+         }
+         /* search button */
+         form.example{
+            display: flex;
+            width: 100%;
+         }
+         form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: none;
+            float: left;
+            width: 80%;
+            background: white;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            }
+
+            /* Style the submit button */
+            form.example button {
+            float: left;
+            width: 10%;
+            padding: 10px;
+            background:#8652ff;
+            color: white;
+            font-size: 17px;
+            border: 0px solid grey;
+            border-left: none; /* Prevent double borders */
+            cursor: pointer;
+           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           border-top-right-radius: 5px;
+           border-bottom-right-radius: 5px;
+            }
+
+            form.example button:hover {
+            background: #8652ff;
+            }
+
+            /* Clear floats */
+            form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            .trending{
+                width: 35%;
+                margin-left: 15%;
+                margin-bottom: -12px;
+            }
+            p>a{
+                text-decoration: none;
+                color: #8652ff;
+                margin-right: 10px;
+             }
+             hr{
+                margin: 0;
+                border:1px solid #ececec;
+             }
+             .BottomNav{
+                display: flex;
+                width: 50%;
+                margin-left: 10%;
+                justify-content: space-between;
+                align-items: center;
+             }
+             .BottomNav>p{
+                margin: 13px auto;
+              
+             }
+             /* .BottomNav>p:first-child{
+                margin-left: 0;
+             } */
+    </style> -->
+</head>
+
+<body>
+    <div id="container">
+    <div id="navbar">
+        <div class="navtop">
+            <div>
+                <img src="apps-Icon.png" alt="">
+                <h4>Donload App</h4>
+            </div>
+            <div>
+                <img src="avatar.png" alt="">
+                <h4>For Employers</h4>
+            </div>
+            <div>
+                <img src="phone-call.png" alt="">
+                <h4>Help</h4>
+            </div>
+        </div>
+        <div class="middle">
+            <div>
+                <div>
+                    <img src="https://www.shine.com/next/static/images/shine-logo.png" alt="">
+                    <!-- The form -->
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Job title, skills" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+
+                </div>
+                <div>
+                    <button class="login"><a href="">Login</a></button>
+                    <button class="register"><a href="">Register</a></button>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1187/1187773.png" alt="">
+                    <img src="https://img.icons8.com/ios/72/shopping-cart.png" alt="">
+                </div>
+            </div>
+            <div class="trending">
+                <p>Trending:</p>
+                <p><a href="">React Js </a>|</p>
+                <p><a href="">Android </a>|</p>
+                <p><a href="">Marketing </a>|</p>
+                <p><a href="">Operation</a>|</p>
+                <p><a href="">Remote</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="BottomNav">
+            <div><p>HOME</p>
+            <!-- <div class="drop1">
+                <a href="">Search</a>
+                <a href="">Job alerts</a>
+            </div> -->
+            </div> 
+           <div><p>JOBS</p></div>
+          <div><p>JOBS SEEKING ASSISTANCE</p></div>  
+          <div><p>COURSES</p></div> 
+           <div><p>CAREER GUIDANCE</p></div>
+           <div><p>BLOG</p></div>
+
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br> -->
+    <div id="bodypart">
+        <div class="b1">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/7626/7626003.png" alt="">
+                <h4>Assessment</h4>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/3361/3361984.png" alt="">
+                <h4>Career Path</h4>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/1243/1243560.png" alt="">
+                <h4>Dream Job</h4>
+            </div>
+        </div>
+        <div class="b2">
+            <p>COOL PLACES TO WORK</p>
+            <p>TOP COMPANIES HIRING</p>
+        </div>
+        <div class="b3">
+            <div>
+                <img src="https://static2.shine.com/r/m/images/employerbranding/608a7830f65e4ac4a70869e145c55c25.png"
+                    alt="">
+                <img src="https://static2.shine.com/r/m/microsite/images/aditya-birla-group/header_images/logo_ABG.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static2.shine.com/r/m/images/employerbranding/c250bee50f5b490aac4b63fe281ab79e.png"
+                    alt="">
+                <img src="https://gazelle.in/wp-content/uploads/2021/05/logo-Genpact-color-144dpi-300x225.png" alt="">
+            </div>
+            <div>
+                <img src="https://static2.shine.com/r/m/images/employerbranding/7a22c70f27904e2e81d7ebd1066d55e1.png"
+                    alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgfDe6w_AqEDLrjgfXOSCK8Knjv-BGjBQxPbISZRCuBqm_K5LcpWSqIertQ2Ur3hFiu8&usqp=CAU"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static2.shine.com/r/m/images/employerbranding/26c83ce6d9df4733a9bbc06d2e3b8f0e.png"
+                    alt="">
+                <img src="https://cdn-ukwest.onetrust.com/logos/8d84415b-1b52-4bc4-8d5f-ca9a8eccaf8a/f7db8968-fc22-4620-92ac-dc05c5d2aa15/02460a41-565e-4cac-80a7-449bc8f77a72/logo-infosys.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://static2.shine.com/r/m/images/employerbranding/d98a014b326648178fbb08eef46ac70e.png"
+                    alt="">
+                <img src="https://www.freepngdesign.com/content/uploads/images/p7-7-teleperformance-5027834553.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="early">
+        <h1>Be An Early Applicant</h1>
+    </div>
+    <div class="b4">
+        <div>
+            <div>
+                <p>Hot</p>
+                <p>1 day go</p>
+            </div>
+            <h1>We are Hiring - Applications Support</h1>
+            <p>JP Morgan</p>
+            <div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/2838/2838912.png" alt="">
+                    <p>Bangalore</p>
+                </div>
+                <div>
+                   <img src="https://cdn-icons-png.flaticon.com/128/1243/1243560.png" alt=""> 
+                   <p>10 to 14 Yrs</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    </div>
+    </body>
+    
+    </html>
