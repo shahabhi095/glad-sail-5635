@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        
+        .cont{
+           padding-top: 20px;
+              width: 65%;
+            margin: auto;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        #container{
+            display: flex;
+             font-size: 14px;
+           line-height: 20px;
+           font-family: "PT Sans";
+           padding-left: 40px;
+
+        }
+         .cont>h1{
+            margin-left: 40px;
+            margin-bottom: 0px;
+        }
+        #sign-in{
+            width:40%;
+            border: 0px solid #8652ff;
+             color: #505e6b;
+             padding-bottom: 55px;
+             margin-bottom: 10px;
+
+        }
+        #sign-in>div{
+          display: flex;
+          justify-content: space-between;
+            width: 100%;
+           font-size: 14px;
+           line-height: 20px;
+           margin-top: 10px;
+           width: 99%;
+        
+         }    /* [type="email"], input[type="passord"] */
+         #sign-in>div>a{
+            text-decoration: none;
+            color: #8652ff ;
+
+         }
+          #sign-in>p{
+            text-align: center;
+            font-size: 20px;
+            line-height: 28px;
+            color: #505e6b;
+          }
+         input{
+            width: 99%;
+            padding: 10px 0;
+            margin: 10px 0 0 0;
+            border: 1px solid #ebe5e5;
+            border-radius: 5px;
+            
+        }
+        input:focus{
+             border: 1px solid #8652ff;
+             outline: none;
+        }
+         input[type="checkbox"]{
+            width: 15px;
+            margin: 0;
+         }
+         span>label{
+            margin-right: 0;
+            padding-right: 0%;
+         }
+         .sub{
+            background-color: #8652ff;
+            color: white;
+            font-size: 16px;
+            line-height: 17px;
+            font-weight: 700;
+            border-radius: 5px;
+         }
+         .sub:hover{
+            background-color: rgba(134,82,255, .7);
+         }
+         .ViaOtp{
+            background-color: white;
+             font-size: 16px;
+            line-height: 17px;
+            font-weight: 700;
+            border-radius: 5px;
+            color: #8652ff;
+            border: 1px solid  #8652ff;
+         }
+         .ViaOtp:hover{
+             background-color: #8652ff;
+             color: white;;
+         }
+         #sign-in+div{
+            width: 1px;
+            background-color: #ececec;
+            margin-left: 10%;
+            margin-bottom: 30px;
+         }
+         .social{
+            padding-left: 45px;
+            margin-bottom: 55px;
+            padding-top: 15px;
+         }
+         .social>a>div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding-left:10px;
+            padding-right: 50px;
+             margin: 5px;
+            margin-bottom: 24px;
+            height: 40px;
+           
+         }
+         .social>a>div>img{
+            width: 20px;
+            height: 20px;
+            padding-right: 10px;
+         }
+         .social>a{
+            text-decoration: none;
+            color: #6d7883;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+         }
+         hr{
+            margin: 0;
+            border:1px solid rgba(236,236,236, .8);
+           
+         }
+         hr+div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3fbfd;
+         }
+         hr+div>a{
+            text-decoration: none;
+            color: white;
+            background-color: #8652ff;
+            padding:7px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 13px;
+            line-height: 13px;
+            font-weight: 700;
+            font-family: "PT Sans";
+            border-radius: 5px;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <h1>Sign-in</h1>
+   
+    <div id="container">
+       
+        
+
+        
+       
+            <div id="sign-in">
+                <input type="email" placeholder="Email" required><br>
+                <input type="passord" placeholder="Password" required><br>
+               <div>
+                    <span>
+                        <input type="checkbox" checked>
+                        <label for="">Keep me signed in</label>
+                    </span>
+                    <a href="">Forgot Password</a>
+                </div> 
+               <input type="submit" value="Login" class="sub">
+                <p>or</p>
+                <input type="submit" value="Login via OTP" class="ViaOtp">
+
+            </div>
+            <div></div>
+                <div class="social">
+                    <a href="">
+                        <div>
+                            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="">
+                            <h4>Sign-in with Google</h4>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/linkedin-66-432522.png" alt="">
+                            <h4>Sign-in with
+                            Linkedin</h4>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/chatting-24-100134.png" alt="">
+                            <h4>Sign-in with
+                            Facebook</h4>
+                        </div>
+                    </a>
+            </div>
+           
+    </div>
+    <hr>
+                    <div>
+                        <h2>Don't have Shine account?</h2>
+                        <a href="Registration.html">Register now</a>
+                    </div>
+    </div>
+</body>
+</html>

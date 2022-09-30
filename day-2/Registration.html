@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+     margin: 0px;
+     padding: 0px;
+     font-family: PT Sans,sans-serif;
+     font-size: 14px;
+ }
+ h3{
+   font-family: PT Sans;
+   font-size: 20px;
+   line-height: 24px;
+ }
+#container{
+    display: flex;
+    flex-direction: column;
+}
+ #navbar {
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     position: fixed;
+     width: 100%;
+     background-color: white;
+     /* margin-bottom: 500px; */
+     z-index: 1;
+ }
+
+ .navtop {
+     display: flex;
+     background-color: #f2f3f8;
+     justify-content: right;
+    padding: 3px;
+
+ }
+
+ .navtop>div {
+     width: 13%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .navtop>div>img {
+     height: 20px;
+     padding-left: 5px;
+     padding-right: 5px;
+ }
+
+ .navtop>div:last-child {
+     margin-right: 5%;
+ }
+
+ .navtop>div>h4 {
+     margin: 10px;
+ }
+ .shine-logo>img {
+     width: 80px;
+     margin: auto 8%;
+     padding: 0px;
+ }
+ 
+ * {
+  box-sizing: border-box;
+}
+.RegForm{
+    display: flex;
+    padding: 35px;
+    padding-right: 0;
+    width: 75%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+     margin-top: 10%;
+     margin-bottom: 50px;
+}
+#form{
+    width: 70%;
+}
+#form>h1{
+    text-align: center;
+    color: #232434;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+}
+input{
+    width: 45%;
+    padding: 13px;
+    margin-top: 15px;
+   
+    margin-right: 10px;
+    border-radius: 5px;
+}
+input{
+ 
+  border: 1px solid  #ebe1e1;
+            border-radius: 5px;
+}
+ input:focus{
+             border: 1px solid #8652ff;
+             outline: none;
+}
+input[type="file"]{
+ border: 1px solid #8652ff;
+}
+#skill{
+    width: 92%;
+    margin-bottom: 0;
+ 
+}
+.resume{
+  text-align: center;
+  margin-top: 30px;
+   
+}
+.resume>input:first-child{
+    width: 30%;
+}
+.resume>label>a{
+    text-decoration: none;
+    color: #8652ff;
+}
+.email{
+    margin-bottom: 0;
+}
+#agreement{
+    width: 20px;
+    margin: 0;
+}
+label{
+    font-size: 13px;
+    color: #505e6b;
+    line-height: 16px;
+}
+input[type="submit"]{
+    background-color: #8652ff;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    border: none;
+    width: 15%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    z-index: .7;
+    background-color: #542bb3;
+}
+.devider{
+    width:10px;
+    margin-top: 80px;
+   
+}
+.devider>div{
+width: 1px;
+ background-color:  #d6c6c6;
+height: 17%;
+text-align: center;
+}
+.devider>p{
+ text-align: center;
+ 
+}
+.social{
+ margin-top: 80px;
+ margin-left: 50px;
+}
+.social>a>div{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     margin-bottom: 15px;
+     padding-left: 10px;
+     padding-right: 30px;
+      
+}
+.social>a>div>img{
+    width: 15px;
+    height: 15px;
+}
+.social>a>div>h4{
+    color: #6d7883;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+    margin: 13px auto;
+}
+.social>a{
+    text-decoration: none;
+}
+.pass{
+    margin-left: 47%;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+            <div class="navtop">
+                <div>
+                    <img src="apps-Icon.png" alt="">
+                    <h4>Download App</h4>
+                </div>
+                <div>
+                    <img src="avatar.png" alt="">
+                    <h4>For Employers</h4>
+                </div>
+                <div>
+                    <img src="phone-call.png" alt="">
+                    <h4>Help</h4>
+                </div>
+        
+            </div >
+            <div class="shine-logo"><img src="https://www.shine.com/next/static/images/shine-logo.png" alt=""></div>
+        </div>
+        <div  class="RegForm">
+           
+            <div  id="form">
+                <h1>Register Now</h1>
+                <form action="">
+                <input type="text" placeholder="Name*" required id="name">
+
+                <input type="number" placeholder="Mobile*" required id="mobile"><br>
+
+                <input type="email" placeholder="email*" required class="email" id="email">
+
+                <input type="text, number" placeholder="Location*" required class="email" id="location"><br>
+                <label for="email">*Password link will be sent to this email</label><br>
+
+                <input type="text"  placeholder="Experience/Fresher*" id="experience" required>
+
+                <input type="text" placeholder="Password*" required id="password"><br>
+                <label for="password" class="pass">*Password must be alphanumeric</label>
+
+                <input type="text" placeholder="skill*" required id="skill"><br>
+                <label for="skills" id="skilllabel">*Add atleast 3 relevant skills</label>
+
+                <div class="resume">
+                   
+                    <input type="file" placeholder="Upload Resume" id="rseume"><br>
+                   
+                    <label for="">File Supported: pdf, doc, docx, rtf, txt - Max. 5 MB</label><br><br>
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <label for="agreement">I agree to <a href="">Terms & Conditions</a> and <a href="">Privacy policy</a> & Receive jobs
+                        notifications</label><br>
+                       <input type="submit" value="Register">
+                </div>
+
+               
+                </form>
+            </div>
+            <div class="devider">
+                <div></div>
+                <p>or</p>
+                <div></div>
+            </div>
+            <div class="social">
+                <a href=""><div>
+                    <h4>Google</h4>
+                </div></a>
+               <a href=""><div>
+                <img src="https://cdn.iconscout.com/icon/free/png-64/linkedin-66-432522.png" alt="">
+                <h4>Linkedin</h4>
+            </div></a> 
+            <a href=""><div>
+                <img src="https://cdn.iconscout.com/icon/free/png-64/chatting-24-100134.png" alt="">
+                <h4>Facebook</h4>
+            </div></a>
+                
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>
+<script>
+let userArray = JSON.parse(localStorage.getItem("userData")) || [];
+document.querySelector("form").addEventListener("submit", registration)
+function registration(event){
+    event.preventDefault();
+    userObj = {
+        Name: document.querySelector("#name").value,
+        Mobile: document.querySelector("#mobile").value,
+        Email: document.querySelector("#email").value,
+        Location: document.querySelector("#location").value,
+        Experience: document.querySelector("#experience").value,
+        Password: document.querySelector("#password").value,
+        Skill:  document.querySelector("#skill").value,
+        Resume: document.querySelector("#rseume").value,
+    }
+    userArray.push(userObj);
+    localStorage.setItem("userData", JSON.stringify(userArray));
+   
+    console.log(JSON.parse(localStorage.getItem("userData")))
+}
+
+
+</script>
