@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+ body {
+            margin: 0px;
+            padding: 0px;
+            font-family: PT Sans, sans-serif;
+            font-size: 14px;
+        }
+        #container {
+            margin-top: 30px;
+            height: 300px;
+        }
+
+        #navbar {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 100%;
+            background-color: white;
+            /* margin-bottom: 500px; */
+            z-index: 1;
+            margin-top: 0;
+        }
+         .shine-logo>img {
+            width: 80px;
+            margin: auto 8%;
+            padding: 0px;
+        }
+        .order-summary{
+            margin: auto 86px;
+            padding-left:  15px;
+            padding-right: 15px;
+            border: 0px solid darkcyan;
+            height: 150px;
+        }
+        .order-summary>strong{
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 23px;
+            color: #38404c;
+        }
+         .order-summary>strong+p{
+             font-size: 15px;
+            font-weight: 400;
+            line-height: 23px;
+            color: #38404c;
+         }
+         .order_summary_product{
+            display: flex;
+            border: 0px solid rgb(77, 91, 104);
+            justify-content: space-between;
+            /* align-items: center; */
+         }
+         .product-table{
+            width: 70%;
+            margin-top: -20px;
+         }
+         ul{
+               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+               margin-bottom: 10px;
+               background-color: white;
+                outline: none;
+                border: none;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+                margin-top: 0;
+         }
+         li{
+            margin: 0;
+            padding: 0;
+            list-style-type: none
+         }
+         img{
+            padding: 10px;
+            margin-left: 0;
+            width: 50px;
+         }
+         .total{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         .order_price_table{
+            width: 25%;
+         }
+         .order_price_table>div{
+           width: 85%;
+            padding: 10px 20px 0px 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         }
+         button{
+             float: right;
+            margin: 20px 4px 0 auto;
+            padding: 10px;
+            background-color:  #8652ff;
+           
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            cursor: pointer;
+         }
+         button>a{
+            text-decoration: none;
+             color: white;
+         }
+          button:hover{
+           background-color:  rgba(134,82,255,.7);
+          }
+         .footer {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    margin-top: 20%;
+     background-color: #fafaff;
+ }
+
+ .footBack {
+    background-color: #fafaff;
+ }
+
+ .footer>div {
+    width: 25%;
+    border: 0px solid blue;
+ }
+
+ .footer>div>a>img {
+    width: 80px;
+ }
+
+ .footer>div>a+p {
+    padding: 0%;
+ }
+ .footer>div>div {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .footer>div>div>a>img {
+    width: 35px;
+ }
+
+ .footer>div>div>a+a>img {
+    width: 70px;
+ }
+
+ .last>img {
+    width: 15px;
+ }
+
+ .footer>div>a>p {
+    padding: 0;
+
+ }
+
+ .footer>div>a {
+    text-decoration: none;
+    color: #8652ff;
+ }
+
+ .footerBottom {
+    display: flex;
+    color: #808991;
+    font-size: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     background-color: #fafaff;
+ }
+
+ .footerBottom>p>a {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #808991;
+    font-size: 13px;
+    text-decoration: none;
+ }
+
+ #footersec {
+    background-color: #fafaff;
+ }
+</style>
+
+</head>
+<body>
+        <div id="navbar">           
+            <div class="shine-logo"><img src="https://www.shine.com/next/static/images/shine-logo.png" alt=""></div>
+        </div>
+
+        <div id="container">
+            <div class="order-summary">
+                <strong>Hi User,</strong>
+                <p>Please check your cart</p>
+                <div class="order_summary_product">
+                    <div class="product-table">
+                        
+                    </div>
+                    <div class="order_price_table">
+                        <div>
+                           
+                            <h2>Order Summary</h2>
+                            <div class="summary">
+                                <div class="total">
+                                    <p>Subtotal</p>
+                                    <h3 class="price">₹<span></span></h3>
+                                </div>
+                                <div class="total">
+                                    <p>SGST @ 9%</p>
+                                    <p class="sgst">+ ₹<span></span></p>
+                                </div><div class="total">
+                                    <p>CGST @ 9%</p>
+                                    <p class="cgst">+ ₹<span></span></p>
+                                </div><div class="total">
+                                    <p><strong>Total Payable</strong></p>
+                                    <h3 class="total">₹<span></span></h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button><a href="payment.html">Proceed to Buya</a> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footBack">
+            <div class="footer">
+                <div>
+                    <a href=""><img src="https://www.shine.com/next/static/images/shine-logo.png" alt=""></a>
+                    <p>Great career start here!</p>
+                    <h4>Download Shine App</h4>
+                    <div>
+                        <a href=""><img src="https://imag.malavida.com/mvimgbig/download-fs/google-play-12459-0.jpg" alt=""></a>
+                        <a href=""><img src="https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>JOB SEEKERS</h4>
+                    <a href="Registration.html">
+                        <p>Register / Login</p>
+                    </a>
+                    <a href="">
+                        <p>Browse Jobs</p>
+                    </a>
+                    <a href="">
+                        <p>Create Free Job Alert</p>
+                    </a>
+                    <a href="">
+                        <p>Job Assistance Services</p>
+                    </a>
+                    <a href="">
+                        <p>Courses</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>Employers</h4>
+                    <a href="">
+                        <p>Recruiter India</p>
+                    </a>
+                    <a href="">
+                        <p>Post Job</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>PARTNER SITES</h4>
+                    <a href="">
+                        <p>English Mate</p>
+                    </a>
+                    <a href="">
+                        <p>Study Mate</p>
+                    </a>
+                    <a href="">
+                        <p>Hindustantimes.com</p>
+                    </a>
+                    <a href="">
+                        <p>Livemint.com</p>
+                    </a>
+                    <a href="">
+                        <p>Livehindustan.com</p>
+                    </a>
+                    <a href="">
+                        <p>OTTplay.com</p>
+                    </a>
+                </div>
+                <div>
+                    <h4>CONTACT US</h4>
+                    <a href="">
+                        <p>080-1006 2222</p>
+                    </a>
+                    <a href="">
+                        <p>contactus@shine.com</p>
+                    </a>
+                    <div class="last">
+                        <img src="https://cdn.iconscout.com/icon/free/png-64/linkedin-66-432522.png" alt="">
+                        <img src="https://cdn.iconscout.com/icon/free/png-64/twitter-241-721979.png" alt="">
+                        <img src="https://cdn.iconscout.com/icon/free/png-64/chatting-24-100134.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footerBottom">
+                <p><a href="">Feedback</a>|<a href="">FAQs</a>|<a href="">About Us</a>|<a href="">Contact Us</a>|<a href="">Privacy
+                        Policy</a>|<a href="">Cookie Policy</a>|<a href="">Fraud Alert</a>|<a href="">Business News</a>|<a
+                        href="">English News</a>|<a href="">Terms & Conditions</a>|<a href="">Disclaimer</a>|<a href="">Report a Job
+                        Posting</a></p>
+            
+                <p>© 2022 HT Media Limited</p>
+            </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+<script>
+    let orderedCourse = JSON.parse(localStorage.getItem("yourcourse"))||[];
+    let Total_Payable = 0;
+        let price = 0;
+
+    orderedCourse.forEach(function(el,i) {
+       
+        let unlsit = document.createElement("ul");
+        unlsit.style= "display:flex"
+        let productLsit1 = document.createElement("li");
+        let productLsit2 = document.createElement("li");
+        let productLsit3 = document.createElement("li");
+       
+           let Image = document.createElement("img");
+                Image.setAttribute("src", el.Img);
+                productLsit1.append(Image);
+
+           let Headings = document.createElement("h3");
+            Headings.innerTxet = el.Heading;
+            productLsit2.append(Headings.innerTxet, document.createElement("br"));
+
+           let cost = document.createElement("p");
+          
+            cost.innerTxet= el.Price;
+             productLsit2.append(cost.innerTxet);
+             productLsit2.style= "font-size:20px; line-height:30px; font-weight:700; color:#000000; width:79%;color:#38404c"
+            productLsit3.innerText = "Remove"
+             productLsit3.style = "margin-right:20px; font-size:16px; color: white;background-color: red; padding: 5px 15px 5px 15px; border-radius:5px;"
+             productLsit3.addEventListener("click",function(event){
+                event.target.parentNode.remove();
+                 RemoveFromCart(i);
+
+             });
+       
+             
+             unlsit.append(productLsit1, productLsit2, productLsit3)
+
+       
+        document.querySelector(".product-table").append(unlsit);
+       // console.log(unlsit);
+        
+    });
+        
+    let rate = orderedCourse.reduce(function(acc, el){
+        return acc + Number(el.Price) ;
+    },0);
+    console.log(rate);
+
+        let total = document.querySelector(".total>h3>span")
+        total.innerText = rate;
+        document.querySelector(".sgst>span").innerText =((9 / 100) * rate).toFixed(2);
+        document.querySelector(".cgst>span").innerText = ((9 / 100) * rate).toFixed(2);
+      let orderamount=  document.querySelector(".total>span").innerText = (rate + (9 / 100) * rate+ (9 / 100) * rate).toFixed(2);
+        localStorage.setItem("yourorder", (rate + (9 / 100) * rate + (9 / 100) * rate).toFixed(2))
+        function RemoveFromCart(i){
+            orderedCourse.splice(i,1);
+            localStorage.setItem("yourcourse", JSON.stringify(orderedCourse));
+            window.location.reload();
+        }
+
+</script>
